@@ -1,0 +1,17 @@
+<table class="table table-bordered table-striped">
+    <tbody>
+      <tr>
+        <th class="text-nowrap" scope="row">Name</th>
+        <td>{{personService.personSel.name}}</td>
+      </tr>
+      <tr>
+        <th class="text-nowrap" scope="row">Last Name</th>
+        <td>{{personService.personSel.lastName}}</td>
+      </tr>
+      <tr>
+        <th class="text-nowrap" scope="row">Processing</th>
+        <td colspan="5">{{personService.personSel.processing}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <i (click)="back()" class="fas fa-arrow-alt-circle-left fa-2x"></i>

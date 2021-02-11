@@ -1,0 +1,21 @@
+<form (ngSubmit)="createPerson(f)" #f="ngForm" autocomplete="off">
+    <div class="form-group row text-center mt-2">
+        <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-5">
+            <input type="text" class="form-control backInputTec47 text-left" id="inputName" 
+                [(ngModel)]="person.name" name="name">
+        </div>
+    </div>
+    <div class="form-group row text-center mt-2">
+        <label for="inputLastName" class="col-sm-2 col-form-label">Last name</label>
+        <div class="col-sm-5">
+            <input type="text" class="form-control backInputTec47 text-left" id="inputLastName"
+                [(ngModel)]="person.lastName" name="lastName">
+        </div>
+    </div>
+    <div class=" col-sm-2 form-group center mt-2">
+        <button type="submit" class="btn btn-success btn-block">
+          Create Person
+        </button>
+    </div>
+</form>
